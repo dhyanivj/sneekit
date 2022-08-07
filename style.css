@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.bg{
+position: absolute;
+z-index: -1;
+}
+
+.bg-right{
+    right: 0;
+}
+.bg-bottom-right{
+    right: 0;
+    top: 50%;
+}
+.bg-bottom-left{
+    left: 0;
+    top: 50%;
+}
+.bg-call {
+    left: 10%;
+    top: 15em;
+    animation-delay: 1s;
+
+}
+.bg-cup {
+    left: 10%;
+    top: 27em;
+}
+.bg-yo {
+    right: 10%;
+    top: 10em;
+}
+.bg-camera {
+    right: 10%;
+    top: 27em;
+    animation-delay: 1s;
+}
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.box {
+    /* border: 1px solid rgba(97, 97, 97, 0.404); */
+    width: 50%;
+background: #FFFFFF;
+box-shadow: 5px 15px 21px 1px rgba(154, 148, 230, 0.1);
+border-radius: 16px;    
+margin: 0 auto;
+}
+.btn-credits{
+    background: #8079E1;
+border-radius: 8px;
+border: none;
+outline: none;
+color: white;
+padding:  0 15px ;
+}
+.box > h1 {
+    /* font-family: 'Poppins'; */
+font-weight: 600;
+font-size: 42px;
+line-height: 50px;
+color: #4C45A3;
+}
+.grey {
+color: rgb(97, 97, 97);
+}
+
+.box-input{
+
+background: #F6F5FC;
+border-radius: 8px;
+}
+.preview-btn{
+    filter: drop-shadow(0px 4px 8px rgba(167, 162, 240, 0.71));
+    background: linear-gradient(178.4deg, #ABA7F2 1.36%, #7770DE 98.65%);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: white;
+}
+.input{
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%
+}
+.visit-link{
+    color: #585858;
+    font-weight: 500;
+    text-decoration: none;
+}
+.web-logo{
+    width: 35px;
+
+}
+.web-linkLogo{
+    width: 30px;
+    height: 30px;
+    opacity: 80%;
+}
+.model-custom{
+    box-shadow: 5px 15px 21px 1px rgba(58, 58, 58, 0.404);
+    border-radius: 16px;
+    border: none;
+}
+
+/* Mobile  */
+@media (max-width: 576px) {
+    .box{
+        width: 80%;
+        margin-top: 25px;
+    }
+    .box > h1 {
+    font-size: 30px;
+    }   
+    .box > h6 {
+    font-size: 14px;
+    }   
+ }
